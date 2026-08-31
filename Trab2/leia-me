@@ -1,0 +1,3 @@
+Controle pelo mouse ou pelas setas e WASD do teclado, seleção de peças com um clique ou com a barra de espaço.
+As peças só podem ser trocadas por peças adjacentes, exceto as diagonais.
+Ao fazer uma combinação inválida, as peças deliberadamente permenacem na posição após a troca.
