@@ -1,0 +1,24 @@
+Controles:
+ - Tecla 1: seleciona a Torre de Atordoamento (alvo único)
+ - Tecla 2: seleciona a Torre de Área (AoE)
+ - ESC ou clique com o botão direito: cancela a seleção de torre
+ - Clique esquerdo: posiciona a torre selecionada no local do clique
+   (ou coleta um power-up, se clicar em cima de um)
+ - R: reinicia o jogo após o Game Over
+
+  - MÁQUINA DE ESTADOS do jogador: modo de seleção de torre (nenhuma,
+   torre de atordoamento, torre de área), estado de invencibilidade
+   pós-dano (para não perder várias vidas no mesmo instante) e estado
+   de power-up ativo (dano em dobro por tempo limitado).
+
+ - Sistema de EVENTOS:
+     * EVT_ENEMY_SPAWNED      -> quando um inimigo é criado
+     * EVT_ENEMY_DESTROYED    -> quando um inimigo morre
+     * EVT_ENEMY_REACHED_END  -> quando um inimigo chega ao fim do caminho
+     * EVT_PROJECTILE_CREATED -> quando uma torre cria um projétil
+     * EVT_PROJECTILE_DESTROYED -> quando um projétil é destruído
+     * EVT_COLLISION          -> quando um projétil colide com um inimigo
+     * EVT_TOWER_PLACED       -> quando uma torre é posicionada
+     * EVT_PLAYER_DAMAGED     -> quando o jogador perde uma vida
+     * EVT_POWERUP_SPAWNED    -> quando um power-up aparece no mapa
+     * EVT_POWERUP_COLLECTED  -> quando o jogador coleta um power-up
